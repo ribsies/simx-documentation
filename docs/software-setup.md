@@ -4,7 +4,7 @@ title: Setup Development Environment
 nav_order: 4
 ---
 
-### Access and pull down the repos
+## Access and pull down the repos
 These are the repos you will need to pull down and the associated branches from AWS CodeCommit. Follow the instructions that were emailed to you to find the repos.
 Use an SSH key to connect to code commit.
 
@@ -17,10 +17,10 @@ You can follow these instructions to set that up
 * Case Files
     * Branch: **Dev**
 
-###Import into unity
+## Import into unity
 This process will take a good amount of time, so you can get this started first.
 
-#####Build bundles
+## Build bundles
 In Unity, we need to build the initial set of bundles that our local project will use to serve assets
 
 * Open the “SimX Utilities” editor window by going to SimX - > Utilities
@@ -46,13 +46,13 @@ mklink /J "C:\Link\To\Repo\simx-server\src\Cases" "C:\Link\To\Repo\case-files"
 ```
 After setting both of those symlinks up, you should see something like the below image in your simx-server repo under the “src” folder.
 
-### Install AWS CLI
+## Install AWS CLI
 
 The server will try to access some functions that involve interacting with AWS. In order for it to work you need to define your AWS credentials using the AWS CLI environment.
 * Download the AWS CLI v1 from https://docs.aws.amazon.com/cli/latest/userguide/install-windows.html
 * Follow these instructions to add your credentials to the CLI environment. https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
 
-###Install the server
+## Install the server
 
 * Open `powershell` or the command line of your choice and navigate to the root of the server repo.
 * You need to run the npm command that will install everything needed to make the server run.
@@ -61,7 +61,7 @@ The server will try to access some functions that involve interacting with AWS. 
 npm install
 ```
 
-### Run the server
+## Run the server
 * Open `powershell` or the command line of your choice and navigate to the root of the server repo.
 * Run
 ```
@@ -71,14 +71,14 @@ npm start
 You should see something like the image below in your terminal
 
 
-### Run unity moderator
+## Run unity moderator
 With the server running, we can now test out the moderator in Unity.
 * Open the `SimX Utilities` editor window by going to `SimX -> Utilities`
 * In the scene window, make sure the `XR Enabled` button in the top left is red (XR mode is disabled)
 * Open the `Persistant Moderator` scene and press Play
 * You should now be able to login and start a case
 
-### Run unity VR client
+## Run unity VR client
 Make sure all the required software is installed to enable the Oculus Link with your Quest
 * Connect Quest
 * Enable Oculus Link
@@ -90,7 +90,7 @@ Make sure all the required software is installed to enable the Oculus Link with 
 
 > To bring up the SimX menu while running the Quest through Unity, press the esc key
 
-### Build local moderator for full case testing
+## Build local moderator for full case testing
 You will want to often build a new version of the moderator so you can run the moderator to start a case while you run the VR client through unity.
 * Open the `SimX Utilities` editor window by going to `SimX -> Utilities`
 * In the scene window, make sure the `XR Enabled` button in the top left is red (XR mode is disabled)
